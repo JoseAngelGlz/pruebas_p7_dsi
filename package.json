@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "doc": "typedoc",
-    "test": "vitest"
+    "test": "vitest",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,9 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@types/node": "^20.0.0",
     "@eslint/js": "^9.22.0",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^20.0.0",
     "eslint": "^9.22.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-tsdoc": "^0.4.0",
@@ -30,5 +32,9 @@
     "tsc-watch": "^6.2.1",
     "typedoc": "^0.27.9",
     "typescript-eslint": "^8.26.1"
+  },
+  "dependencies": {
+    "inquirer": "^9.1.4",
+    "lowdb": "^5.1.0"
   }
 }
